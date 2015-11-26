@@ -59,6 +59,9 @@ setup (
     entry_points={
         'console_scripts': [
             'sensortag=bluepy.sensortag:main',
+            'sensortag2=bluepy.sensortag2650:main'
+            'sensortag-amqp=bluepy.sensortag-amqp:main',
+            'sensortag2-amqp=bluepy.sensortag2650-amqp:main'
         ]
     }
 )
