@@ -1,0 +1,16 @@
+name: madsensor
+vendor: Samuel Cozannet
+architecture: [amd64, armhf]
+icon: meta/icon.png
+version: 0.0.1
+frameworks: 
+	- docker
+services:
+	- name: madsensor
+		description: "SensorTag uploading to the cloud"
+		start: bin/run.sh
+		caps:
+			- docker_client
+			- networking
+    security-policy:
+      apparmor: meta/madsensor.apparmor
